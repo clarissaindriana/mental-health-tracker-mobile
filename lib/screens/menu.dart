@@ -7,13 +7,14 @@ class MyHomePage extends StatelessWidget {
   final String name = 'Clarissa Indriana P'; // Nama
   final String className = 'PBP B'; // Kelas
 
+  MyHomePage({super.key});
+
   final List<ItemHomepage> items = [
     ItemHomepage("Lihat Mood", Icons.mood),
     ItemHomepage("Tambah Mood", Icons.add),
     ItemHomepage("Logout", Icons.logout),
   ];
 
-  MyHomePage({super.key});
   @override
   Widget build(BuildContext context) {
     // Scaffold menyediakan struktur dasar halaman dengan AppBar dan body.
